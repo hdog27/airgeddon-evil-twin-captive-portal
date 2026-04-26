@@ -145,7 +145,7 @@ The menu presents several Evil Twin variants:
 We select **option 9 — Evil Twin AP attack with captive portal** because it tricks victims into voluntarily submitting their WiFi password through a fake login/router page, rather than relying on passive sniffing.
 
 <p align="center">
-  <img src="screenshots/3_0_2.png" alt="Evil Twin Attacks Menu" width="750"/>
+  <img src="screenshots/3.0.2.png" alt="Evil Twin Attacks Menu" width="750"/>
 </p>
 
 ---
@@ -157,7 +157,7 @@ Before selecting a specific target, airgeddon opens a **live scan window** using
 Press `Ctrl+C` to stop scanning once you've identified your target.
 
 <p align="center">
-  <img src="screenshots/1777243734649_3_0_3.png" alt="Scanning for Target Networks" width="850"/>
+  <img src="screenshots/3.0.3.png" alt="Scanning for Target Networks" width="850"/>
 </p>
 
 > **What you're seeing in the scan window:**  
@@ -174,7 +174,7 @@ After the scan completes, airgeddon presents a **formatted target list**. Networ
 We select **option 7** — `Fios-L4tHF` on channel 1, BSSID `B8:F8:53:8B:1E:3A`, signal strength 70%.
 
 <p align="center">
-  <img src="screenshots/1777243734650_3_0_4.png" alt="Select Target Network" width="750"/>
+  <img src="screenshots/3.0.4.png" alt="Select Target Network" width="750"/>
 </p>
 
 | Field | Value |
@@ -200,7 +200,7 @@ Three options are available:
 We select **option 1 (mdk4 amok mode)** because it's the most aggressive and effective at clearing clients from the legitimate AP.
 
 <p align="center">
-  <img src="screenshots/1777243734650_3_0_5.png" alt="Deauth Method Selection" width="750"/>
+  <img src="screenshots/3.0.5.png" alt="Deauth Method Selection" width="750"/>
 </p>
 
 ---
@@ -212,7 +212,7 @@ Airgeddon asks if we want to enable **"DoS pursuit mode"** — a feature that wo
 Since we only have one external adapter, we answer **N**.
 
 <p align="center">
-  <img src="screenshots/1777243734650_3_0_6.png" alt="DoS Pursuit Mode Prompt" width="750"/>
+  <img src="screenshots/3.0.6.png" alt="DoS Pursuit Mode Prompt" width="750"/>
 </p>
 
 > **DoS pursuit mode** is useful when attacking enterprise APs that actively change channels to evade jamming. For home routers (like this Verizon Fios router on a fixed channel), it's unnecessary.
@@ -232,7 +232,7 @@ Two prompts appear in sequence:
 We answer **N** (no existing file) so airgeddon will **capture the handshake now** by forcing a deauth and listening for the reconnect.
 
 <p align="center">
-  <img src="screenshots/1777243734650_3_0_8.png" alt="MAC Spoof and Handshake Prompt" width="750"/>
+  <img src="screenshots/3.0.8.png" alt="MAC Spoof and Handshake Prompt" width="750"/>
 </p>
 
 ---
@@ -252,7 +252,7 @@ mdk4 wlan1mon d -B B8:F8:53:8B:1E:3A
 ```
 
 <p align="center">
-  <img src="screenshots/1777243734651_3_0_9.png" alt="Handshake Capture Timeout" width="700"/>
+  <img src="screenshots/3.0.9.png" alt="Handshake Capture Timeout" width="700"/>
 </p>
 
 ---
@@ -269,7 +269,7 @@ The handshake `.cap` file is saved to:
 Press Enter to accept the default save path and continue to captive portal configuration.
 
 <p align="center">
-  <img src="screenshots/1777243734651_3_1_0.png" alt="Handshake Captured Successfully" width="850"/>
+  <img src="screenshots/3.1.0.png" alt="Handshake Captured Successfully" width="850"/>
 </p>
 
 > **Why do we need the handshake?**  
@@ -284,7 +284,7 @@ Press Enter to accept the default save path and continue to captive portal confi
 **Advanced Portal** — We select **Y** for the advanced captive portal. This generates a branded portal page using the target AP's BSSID to look up the router vendor (Verizon/Fios in this case) and inserts their logo — making the fake "router firmware update" page appear much more convincing to the victim.
 
 <p align="center">
-  <img src="screenshots/1777243734651_3_1_2.png" alt="Captive Portal Language and Style" width="750"/>
+  <img src="screenshots/3.1.2.png" alt="Captive Portal Language and Style" width="750"/>
 </p>
 
 > **Standard portal** shows a generic WiFi login page.  
@@ -306,7 +306,7 @@ The full attack is now live. Airgeddon spawns **5 concurrent windows**:
 | **Control** | airgeddon | Monitors connection attempts and validates submitted passwords |
 
 <p align="center">
-  <img src="screenshots/1777243734651_3_1_3.png" alt="Full Attack Running - All Windows" width="1000"/>
+  <img src="screenshots/3.1.3.png" alt="Full Attack Running - All Windows" width="1000"/>
 </p>
 
 **What the victim experiences:**
@@ -325,7 +325,7 @@ The Control panel confirms a victim has connected to the Evil Twin AP (DHCP leas
 Airgeddon automatically **validates the password against the captured handshake** — if it's correct, the attack stops gracefully and the password is confirmed.
 
 <p align="center">
-  <img src="screenshots/1777243734652_3_1_4.png" alt="Password Captured in Control Panel" width="800"/>
+  <img src="screenshots/3.1.4.png" alt="Password Captured in Control Panel" width="800"/>
 </p>
 
 ```
