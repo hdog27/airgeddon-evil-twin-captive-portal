@@ -145,7 +145,7 @@ The menu presents several Evil Twin variants:
 We select **option 9 — Evil Twin AP attack with captive portal** because it tricks victims into voluntarily submitting their WiFi password through a fake login/router page, rather than relying on passive sniffing.
 
 <p align="center">
-  <img src="screenshots/1777243734649_3_0_2.png" alt="Evil Twin Attacks Menu" width="750"/>
+  <img src="screenshots/3_0_2.png" alt="Evil Twin Attacks Menu" width="750"/>
 </p>
 
 ---
