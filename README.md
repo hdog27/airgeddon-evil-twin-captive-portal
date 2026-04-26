@@ -126,7 +126,7 @@ Airgeddon launches and detects the available wireless interfaces. Select the Pan
 The main menu displays all available attack categories. For this attack, we'll use option **7 — Evil Twin attacks menu**.
 
 <p align="center">
-  <img src="screenshots/1777243734649_3_0_1.png" alt="Airgeddon Main Menu" width="750"/>
+  <img src="screenshots/3_0_1.png" alt="Airgeddon Main Menu" width="750"/>
 </p>
 
 > **Interface selected:** `wlan1mon` | **Mode:** Monitor | **Supported bands:** 2.4GHz, 5GHz
